@@ -1,15 +1,28 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Built files and outputs
+/[Bb]uild/
+/build/
+*.apk
+*.aar
+*.dex
+*.class
+
+# Android Studio / IntelliJ IDEA user-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/deploymentTargetSelector.xml
+.idea/navEditor.xml
+.idea/.name
+
+# Local configuration files
 local.properties
+.gradle/
+.DS_Store
+
+# Android Studio navigation and preview cache
+.navigation/
+captures/
