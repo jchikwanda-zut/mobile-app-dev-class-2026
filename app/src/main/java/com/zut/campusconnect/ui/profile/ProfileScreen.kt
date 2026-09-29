@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.zut.campusconnect.ReportIssueActivity
 
 @Composable
 fun ProfileScreen(name: String, course: String) {
@@ -55,6 +56,16 @@ fun ProfileScreen(name: String, course: String) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Tell a friend")
+        }
+
+        // Explicit Intent Button Trigger
+        Button(
+            onClick = {
+                val intent = Intent(context, ReportIssueActivity::class.java)
+                context.startActivity(intent)
+            }
+        ) {
+            Text("Report an Issue")
         }
     }
 }

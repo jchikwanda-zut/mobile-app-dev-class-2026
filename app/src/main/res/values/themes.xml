@@ -8,4 +8,9 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
         <item name="postSplashScreenTheme">@style/Theme.CampusConnect</item>
     </style>
+
+    <style name="Theme.App.ReportIssueDialog" parent="android:Theme.Material.Dialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
 </resources>
