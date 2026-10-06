@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import com.zut.campusconnect.ReportIssueActivity
 
 @Composable
-fun ProfileScreen(name: String, course: String) {
+fun ProfileScreen(name: String, program: String) {
     val context = LocalContext.current;
     Column(
         modifier = Modifier.fillMaxSize().padding(24.dp),
@@ -41,7 +41,7 @@ fun ProfileScreen(name: String, course: String) {
         }
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = course,
+            text = program,
             style = MaterialTheme.typography.titleLarge
         )
         Button(
@@ -63,7 +63,8 @@ fun ProfileScreen(name: String, course: String) {
             onClick = {
                 val intent = Intent(context, ReportIssueActivity::class.java)
                 context.startActivity(intent)
-            }
+            },
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text("Report an Issue")
         }
