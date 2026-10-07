@@ -22,14 +22,6 @@ fun LabledTextField(
 //            },
         onValueChange = onValueChange,
         label = { Text(label) },
-        modifier = Modifier.fillMaxWidth(),
-        textStyle = TextStyle(
-            color = Color.Black
-        ),
-        colors = OutlinedTextFieldDefaults.colors(
-            focusedBorderColor = Color.Black,
-            focusedTextColor = Color.Black,
-            focusedLabelColor = Color.Black
-        )
+        modifier = Modifier.fillMaxWidth()
     )
 }
